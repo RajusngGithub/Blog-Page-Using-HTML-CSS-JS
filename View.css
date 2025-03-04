@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(164, 84, 239);
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    /* background-color: #E8F3F3;
+     */
+    /* background-color: #90eee9; */
+    height: 48px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+
+}
+
+.heading {
+    display: flex;
+    gap: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.heading h1 {
+    font-size: 20px;
+}
+
+.home ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.li-4 img {
+    margin-right: 8px;
+}
+
+li a,
+h1 a,
+#text a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.li-5 {
+    display: none;
+}
+
+.Side-bar {
+    background-color: rgb(154, 64, 238);
+    width: 190px;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+}
+
+.menu-bars {
+    display: grid;
+    grid-template-rows: repeat(minmax(1,6) ,55px);
+}
+
+.menu {
+    height: 50px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.menu a {
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.menu a button {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.menu a button:hover {
+    cursor: pointer;
+    background-color: rgb(133, 28, 231);
+    box-shadow: 7px 6px 11px 1px rgb(99, 9, 184);
+}
+
+.main-container {
+    /* padding: 25px 0px; */
+    padding-left: 188px;
+}
+
+.main-uploaded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -645px 0px;
+}
+
+.upload{
+    display: grid;
+    grid-template-columns: repeat(2, 520px);
+    /* grid-template-rows:  650px; */
+    padding: 15px;
+    position: relative;
+    top: 50px;
+    overflow-x: auto;
+    /* background-color: rgb(179, 147, 210); */
+}
+.blogs{
+    background: radial-gradient(circle, #c21f8e, #3e1497);
+    /* background-color: gray; */
+    min-height: 480px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 33px;
+}
+.place-image img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 33px;
+}
+.content>h3 {
+    text-align: center;
+    /* background-image: url("https://www.holidify.com/images/tooltipImages/COORG.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    color: white;
+}
+.content>p{
+    color: white;
+    /* padding: 10px; */
+    width: 100%;
+    /* text-overflow: clip; */
+}
+form{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+form button[type="submit"]
+{
+    position: relative;
+    color: white;
+    height: 35px;
+    width: 100px;
+    border-radius: 33px;
+    border-style: none;
+    /* margin-left: 105px; */
+    left: 95px;
+    margin-left: 12px;
+    background-color: #662ce4;
+    top:45px;
+}
+.eddit
+{
+    left: 25px;
+}
+form button[type="submit"]:hover
+{
+    cursor: pointer;
+ /* transform: scale(1.2);
+ transition: transform 0.3ms ease-in-out; */
+ /* transition: background-color 0.5s ease-in-out; */
+ background-color: red;
+}
+@media only screen and (max-width:540px) {
+
+    .li-1,
+    .li-2,
+    .li-3,
+    .li-4 {
+        display: none;
+    }
+
+    .li-5 {
+        display: block;
+    }
+}

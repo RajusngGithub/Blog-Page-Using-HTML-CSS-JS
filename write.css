@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(164, 84, 239);
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    /* background-color: #E8F3F3;
+     */
+    /* background-color: #90eee9; */
+    height: 48px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+
+}
+
+.heading {
+    display: flex;
+    gap: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.heading h1 {
+    font-size: 20px;
+}
+
+.home ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.li-4 img {
+    margin-right: 8px;
+}
+
+li a,
+h1 a,
+#text a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.li-5 {
+    display: none;
+}
+
+.Side-bar {
+    background-color: rgb(154, 64, 238);
+    width: 190px;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+}
+
+.menu-bars {
+    display: grid;
+    grid-template-rows: repeat(4, 55px);
+}
+
+.menu {
+    height: 50px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.menu a {
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.menu a button {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.menu a button:hover {
+    cursor: pointer;
+    background-color: rgb(133, 28, 231);
+    box-shadow: 7px 6px 11px 1px rgb(99, 9, 184);
+}
+
+.Main {
+    /* padding: 25px 0px; */
+    padding-left: 188px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -635px 0px;
+}
+
+.new-blogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    height: 417px;
+    width: 97%;
+    overflow-x: auto;
+    background-color: rgb(181, 99, 216);
+
+}
+
+.blog-form {
+    padding: 10px;
+}
+
+.blog-form h1,
+h3,
+h4 {
+    color: white;
+    /* text-align: center; */
+    font-weight: bolder;
+}
+
+.blog-form input[type="text"] {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(193, 53, 193);
+    color: white;
+    border-style: none;
+    border-radius: 8px;
+    padding: 5px;
+}
+.blog-form textarea  {
+    width: 100%;
+    height: 119px;
+    background-color: rgb(193, 53, 193);
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+::placeholder{
+    padding: 5px;
+    color: white;
+}
+
+.blog-form button {
+    background-color: rgb(134, 15, 104);
+    height: 33px;
+    width: 120px;
+    text-align: center;
+    color: white;
+    border-style: none;
+    font-weight: bolder;
+    /* margin-left: 35px; */
+}
+.blog-form button[type="reset"]
+{
+    margin-left: 88px;
+} 
+.blog-form button[type="reset"]:hover
+{   
+    cursor: pointer;
+    background-color: rgb(225, 20, 54);
+} 
+.blog-form button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(215, 61, 176);
+  
+}
+
+@media only screen and (max-width:540px) {
+
+    .li-1,
+    .li-2,
+    .li-3,
+    .li-4 {
+        display: none;
+    }
+
+    .li-5 {
+        display: block;
+    }
+}

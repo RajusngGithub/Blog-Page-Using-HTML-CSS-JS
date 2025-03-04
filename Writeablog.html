@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="write.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1><a href="firstBlog.html">Travel's Blog</a></h1>
+            <!-- <input type="search" placeholder="Search Places"> -->
+        </div>
+        <div class="home">
+            <ul>
+                <li class="li-1"><a href="firstBlog.html">Home</a></li>
+                <li class="li-2"><a href="/">About Us</a></li>
+                <li class="li-3"><a href="/">Contact Us</a></li>
+                <li class="li-4"><a href="Blog.html"><img src="home.png" alt="">Main Menu</li>
+                <li class="li-5"><a href=""><i class="fas fa-bars" id="btn"></i></a></li> 
+                </ul>
+        </div>
+    </header>
+<aside class="Side-bar">
+    <div class="menu-bars">
+        <div class="menu Blogs"><a href="Writeablog.html"><button type="menu">Write A Blog</button></a></div>
+        <div class="menu View"><a href="viewblog4.php"><button type="menu">View Blogs</button></a></div>
+        <!-- <div class="menu All"><a href="/"><button type="menu">All Blogs</button></a></div> -->
+        <!-- <div class="menu"></div> -->
+    </div>
+</aside>
+<div class="Main" >
+    <div class="main-content">
+        <div class="new-blogs" id="new-blogs">
+            <form action="upload5.php"  method="post" enctype="multipart/form-data">
+            <div class="blog-form">
+                <label for="File">
+                    <h1>Upload Image:</h1>
+                </label>
+                 <input type="file" name="File" id="File" required>
+            </div>
+            <div class="blog-form">
+                <label for="Text"><h3>Heading:</h3></label>  
+                <input type="text" name="Text" id="Text"  placeholder="Heading" required>
+            </div>
+            <div class="blog-form">
+                <label for="textArea"><h4>About the Place:</h4></label>
+                <textarea name="textArea" id="textArea" required placeholder="Write About Places" rows="5" cols="12"></textarea>
+            </div>
+            <div class="blog-form">
+                <button type="submit">Submit Now</button>
+                <button type="reset"> Reset</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- <script>
+    function showAlert(message) {
+        alert(message);
+    }
+</script> -->
+</body>
+</html>

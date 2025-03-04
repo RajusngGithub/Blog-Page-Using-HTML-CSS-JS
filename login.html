@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+    <div class="login-wrap">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login3.php" id="login-form" method="post">
+            <label for="email">
+                <input type="email"  name="email" id="email" required placeholder="Eg:sample@gmail.com">
+            </label>
+            <label for="password">
+                <input type="password" name="password" id="password" required placeholder="Enter Password">
+            </label>
+            <div id="blog-user"><button type="submit">Login</button>
+            </div>
+                <a href="/">Forgot Password?</a>
+                <a href="regi.html">New User?</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
